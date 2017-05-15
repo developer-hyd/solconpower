@@ -1,14 +1,15 @@
 import os
-from flask import Flask, request, render_template, url_for, flash, \
-    redirect,session
-from werkzeug.utils import secure_filename
+from flask import Flask, request, render_template, url_for, flash,redirect
 
 app = Flask(__name__)
-app.secret_key = "super secret key"
 
 @app.route('/')
 def index():
-   return render_template('index.html')
+	return redirect(url_for('home'))
+
+@app.route('/home')
+def home():
+   return render_template('home.html')
 
 @app.route('/products')
 def products():
@@ -31,15 +32,15 @@ def solarMeter():
 
 @app.route('/products/RoofTop')
 def rooftop():
-   return render_template('RoofTop.html') 
+   return render_template('rooftop.html') 
 
 @app.route('/products/WaterPump')
 def waterpump():
-   return render_template('WaterPump.html')    
+   return render_template('waterpump.html')    
 
 @app.route('/products/SolarLight')
 def solarlight():
-   return render_template('SolarLight.html')   
+   return render_template('solarlight.html')   
 
 if __name__ == '__main__':
     app.run(debug='true',port=8000)    

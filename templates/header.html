@@ -1,0 +1,28 @@
+<section id="menu-9">
+    <nav class="navbar navbar-dropdown navbar-fixed-top">
+        <div class="container">
+            <div class="mbr-table">
+                <div class="mbr-table-cell">
+                    <div class="navbar-brand">
+                        <a href="{{url_for('index')}}" class="navbar-logo"><img src="{{url_for('static',filename='assets/images/logo.png')}}" alt=""></a>
+                        <a class="navbar-caption" href="{{url_for('index')}}">SolConPower</a>
+                    </div>
+                </div>
+                <div class="mbr-table-cell">
+                    <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <div class="hamburger-icon"></div>
+                    </button>
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
+                        <li class="nav-item"><a class="nav-link link" href="{{url_for('index')}}">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link link" href="{{url_for('products')}}" aria-expanded="false">PRODUCTS</a></li>
+                        <li class="nav-item"><a class="nav-link link" href="{{url_for('contact')}}" aria-expanded="false">CONTACT</a></li>
+                        <li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="{{url_for('solarMeter')}}">SOLAR-METER</a></li>
+                    </ul>
+                    <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <div class="close-icon"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
