@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="{{url_for('static',filename='assets/images/logo.png')}}" rel="stylesheet" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/tether/tether.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/animate.css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/dropdown/css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/theme/css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/style.css')}}">
+    <link href="{{url_for('static',filename='assets/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/mobirise/css/mbr-additional.css')}}" type="text/css">
+    <script src="{{url_for('static',filename='assets/web/assets/jquery/jquery.min.js')}}"></script>
+<!--     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+ -->    <link rel ="stylesheet" href="{{url_for('static',filename='slider.css')}}" type="text/css"></link>
+    <script src="{{url_for('static',filename='slider.js')}}" type="text/javascript"></script>
+    <style type="text/css">
+body {
+        padding-top: 50px;
+    }
+    
+    .box {
+        border-radius: 3px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        padding: 10px 25px;
+        text-align: right;
+        display: block;
+        margin-top: 60px;
+    }
+    
+    .box-icon {
+        background-color: #57a544;
+        border-radius: 50%;
+        display: table;
+        height: 100px;
+        margin: 0 auto;
+        width: 100px;
+        margin-top: -61px;
+    }
+    
+    .box-icon span {
+        color: #fff;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    .info h4 {
+        font-size: 26px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    .info > p {
+        color: #717171;
+        font-size: 16px;
+        padding-top: 10px;
+        text-align: justify;
+    }
+    
+    .info > a {
+        background-color: #03a9f4;
+        border-radius: 2px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        color: #fff;
+        transition: all 0.5s ease 0s;
+    }
+    
+    .info > a:hover {
+        background-color: #0288d1;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+        color: #fff;
+        transition: all 0.5s ease 0s;
+    }
+}
+#work .col-md-4 {
+    padding: 28px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.bold {
+    font-weight: bold;
+}
+#work .col-md-4 {
+    padding: 28px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+#work .col-md-4 {
+    padding: 28px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.heading {
+    font-size: 20px;
+}
+h1 {
+    letter-spacing: 2px;
+}
+#work {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+section {
+    display: block;
+    box-sizing: border-box;
+}
+.section-title {
+    padding-bottom: 32px;
+}
+.card-box {
+    padding: 20px;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-clip: padding-box;
+    margin-bottom: 20px;
+    background-color: #f3ecea;
+}
+#footer {
+    background-color: #447e98;
+}
+.myfooter {
+    color: #9d9d9d;
+    padding: 10px 0px;
+}
+.myfooter a {
+    color: #efefef;
+    padding: 10px 0px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.myfooter a:hover {
+    color: #E96840;
+    padding: 12px 0px;
+    text-decoration: none;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+    </style>
+</head>
+
+<body>
+    <section id="menu-9">
+        <nav class="navbar navbar-dropdown navbar-fixed-top">
+            <div class="container">
+                <div class="mbr-table">
+                    <div class="mbr-table-cell">
+                        <div class="navbar-brand">
+                            <a href="{{url_for('index')}}" class="navbar-logo"><img src="{{url_for('static',filename='assets/images/logo.png')}}" alt=""></a>
+                            <a class="navbar-caption" href="{{url_for('index')}}">SolConPower</a>
+                        </div>
+                    </div>
+                    <div class="mbr-table-cell">
+                        <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                            <div class="hamburger-icon"></div>
+                        </button>
+                        <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
+                            <li class="nav-item"><a class="nav-link link" href="{{url_for('index')}}">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link link" href="{{url_for('products')}}" aria-expanded="false">PRODUCTS</a></li>
+                            <li class="nav-item"><a class="nav-link link" href="{{url_for('contact')}}" aria-expanded="false">CONTACT</a></li>
+                            <li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="{{url_for('solarMeter')}}">SOLAR-METER</a></li>
+                        </ul>
+                        <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                            <div class="close-icon"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <div id="feedback">
+        <div id="feedback-form" style='display:none;' class="col-xs-4 col-md-4 panel panel-default">
+            <form method="POST" action="/feedback" class="form panel-body" role="form">
+                <div class="form-group">
+                    <input class="form-control" name="email" autofocus placeholder="Your e-mail" type="email" />
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="body" required placeholder="Please write your feedback here..." rows="5"></textarea>
+                </div>
+                <button class="btn btn-primary pull-right" type="submit">Send</button>
+            </form>
+        </div>
+        <div id="feedback-tab">Feedback</div>
+    </div>
+    <section class="mbr-slider mbr-section mbr-section__container carousel slide mbr-section-nopadding mbr-after-navbar" data-ride="carousel" data-keyboard="false" data-wrap="true" data-pause="false" data-interval="5000" id="slider-8">
+        <div>
+            <div>
+                <div>
+                    <ol class="carousel-indicators">
+                        <li data-app-prevent-settings="" data-target="#slider-8" data-slide-to="0" class="active"></li>
+                        <li data-app-prevent-settings="" data-target="#slider-8" class="" data-slide-to="1"></li>
+                        <li data-app-prevent-settings="" data-target="#slider-8" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full active" data-bg-video-slide="false" style="background-image: url({{url_for('static',filename='assets/images/rooftopslide.jpg')}});">
+                            <div class="mbr-table-cell">
+                                <div class="container-slide container">
+                                    <div class="row">
+                                        <div class="col-md-8 col-md-offset-1">
+                                            <h2 class="mbr-section-title display-1"></h2>
+                                            <p class="mbr-section-lead lead">Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.</p>
+                                            <div class="mbr-section-btn"><a class="btn btn-lg btn-success" href="">FOR WINDOWS</a> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full" data-bg-video-slide="false" style="background-image: url({{url_for('static',filename='assets/images/streatlightslide.jpg')}});padding-top: 80px;">
+                            <div class="mbr-table-cell">
+                                <div class="container-slide container">
+                                    <div class="row">
+                                        <div class="col-md-8 col-md-offset-1">
+                                            <h2 class="mbr-section-title display-1"></h2>
+                                            <p class="mbr-section-lead lead">Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.</p>
+                                            <div class="mbr-section-btn"><a class="btn btn-lg btn-success" href="">FOR WINDOWS</a> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full" data-bg-video-slide="false" style="background-image: url({{url_for('static',filename='assets/images/waterpumpslide.jpg')}});padding-top: 80px;">
+                            <div class="mbr-table-cell">
+                                <div class="container-slide container">
+                                    <div class="row">
+                                        <div class="col-md-8 col-md-offset-1">
+                                            <h2 class="mbr-section-title display-1"></h2>
+                                            <p class="mbr-section-lead lead">Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.</p>
+                                            <div class="mbr-section-btn"><a class="btn btn-lg btn-success" href="">FOR WINDOWS</a> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-app-prevent-settings="" class="left carousel-control" role="button" data-slide="prev" href="#slider-8">
+                        <span class="icon-prev" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a data-app-prevent-settings="" class="right carousel-control" role="button" data-slide="next" href="#slider-8">
+                        <span class="icon-next" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" style="background-color: #d2f3f8;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title">
+                        <h2 class="bold">About Us</h2>
+                        <hr>
+                        <div style="text-align:left;color: black;">
+                            <p><b>Solcon Powertech Private Limited (SPPL)</b> is a leading company in renewable energy sector. SPPL provides a complete range of systems, equipments and services for sustainable energy solutions. Our team comprises of expert technical professionals who knows to utilize each and every ray of sunlight for power generation.
+                                <p>In todays world electricity has a wide range of application from lighting purposes at night to source for the development of industries which in turn helps in the development of the country. The conventional power sources are exploiting the surrounding environment and day by day electricity is becoming more expensive.</p> <b>Our vision is to promote environment friendly nonconventional power sources for sustainable development of the country</b>. Our team accepts the challenge and provides an appropriate solution as per the requirement of power. Without doubting we have start acting to convert the power of sun into required energy. We the Solcon Powertech Pvt. Ltd. strongly believe in todays renewable technology for building green tomorrow. Renewable energy comes from the sources which do not deplete when used, such as wind or solar power. Solar power is the energy available on Earth comes from the Sun in one or another way. The Sun radiation every day provides the light and heat needed for life on Earth. The sunlight can be converted into electricity using <b>photovoltaic cells</b> similarly using solar thermal collector solar water heating system works.</p>
+                            <p>Join <b>SPPL</b> to generate your own power with the range of compact and efficient solar solutions. Our company the SPPL manufactures, design and provides following services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="" style="padding-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title">
+                        <h2 class="bold">Our Sevices</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;" class="col-lg-6 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="0.6s">
+                    <div class="box">
+                        <div class="info">
+                            <h5>Solar Products</h5>
+                            <p>We provides almost all the solar energy generation and its utilization solutions for home and industry purpose.</p><p>We also customise solar product according to our customer requirnments and our expert team is available all the time to help them.</p>
+                            <a href="{{url_for('products')}}" class="btn">See Products</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="visibility: visible; animation-delay: 0.9s; animationtion-name: fadeInUp;" class="col-lg-6 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="0.9s">
+                    <div class="box">
+                        <div class="info">
+                            <h5>Solar-Meter</h5>
+                            <p><b>Solar-Meter</b> is one of our expert robot which gives you estmates and energy consumption calculation for your need</p><p>Try it to see your current electricity usage and estimate of how much energy you can save if you are using any of the solar product we provide. </p>
+                            <a href="" class="btn btn-primary">Try It!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="mbr-section" id="msg-box4-c" style="background-color: rgb(242, 242, 242); padding-top: 120px; padding-bottom: 120px;">
+        <div class="container">
+            <div class="row">
+                <div class="mbr-table-md-up">
+                    <div class="mbr-table-cell mbr-right-padding-md-up mbr-valign-top col-md-7 image-size" style="width: 80%;">
+                        <div class="mbr-figure">
+                            <iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/Tq7p44IA-1U?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0" width="1280" height="720" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="mbr-table-cell col-md-5 text-xs-center text-md-left content-size">
+                        <h3 class="mbr-section-title display-2">INTRO WITH YOUTUBE VIDEO</h3>
+                        <div><a class="btn btn-primary" href="https://mobirise.com">MORE</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <footer id="footer">
+        <div class="container">
+            <div class="row myfooter">
+                <div class="col-sm-6">
+                    <div class="pull-left">
+                        © Copyright Company 2015 | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="pull-right">Designed by <a href="">developer.hyd@gmail.com</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{{url_for('static',filename='assets/tether/tether.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/smooth-scroll/smooth-scroll.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/jquery-mb-ytplayer/jquery.mb.ytplayer.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/viewport-checker/jquery.viewportchecker.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/dropdown/js/script.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/touch-swipe/jquery.touch-swipe.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/theme/js/script.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/mobirise-slider-video/script.js')}}"></script>
+</body>
+
+</html>
