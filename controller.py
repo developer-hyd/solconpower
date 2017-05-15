@@ -28,7 +28,7 @@ def contact():
 
 @app.route('/products/SolarMeter')
 def solarMeter():
-   return render_template('index.html')         
+   return render_template('home.html')         
 
 @app.route('/products/RoofTop')
 def rooftop():
