@@ -1,7 +1,10 @@
 import os
-from flask import Flask, request, render_template, url_for, flash,redirect
+from flask import Flask, request, render_template, url_for, flash,redirect,session
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
+app.secret_key = "solcon@123"
+
 
 @app.route('/')
 def index():
