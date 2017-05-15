@@ -2,119 +2,21 @@
 <html>
 
 <head>
-    <link href="{{url_for('static',filename='assets/images/logo.png')}}" rel="stylesheet" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="{{url_for('static',filename='assets/tether/tether.min.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='assets/bootstrap/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='assets/animate.css/animate.min.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='assets/dropdown/css/style.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='assets/theme/css/style.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/animate.min.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/style.css')}}">
-    <link href="{{url_for('static',filename='assets/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{url_for('static',filename='assets/mobirise/css/mbr-additional.css')}}" type="text/css">
-    <style type="text/css">
-    @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
-    body {
-        padding-top: 50px;
-    }
-    
-    .box {
-        border-radius: 3px;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-        padding: 10px 25px;
-        text-align: right;
-        display: block;
-        margin-top: 60px;
-    }
-    
-    .box-icon {
-        background-color: #57a544;
-        border-radius: 50%;
-        display: table;
-        height: 100px;
-        margin: 0 auto;
-        width: 100px;
-        margin-top: -61px;
-    }
-    
-    .box-icon span {
-        color: #fff;
-        display: table-cell;
-        text-align: center;
-        vertical-align: middle;
-    }
-    
-    .info h4 {
-        font-size: 26px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-    
-    .info > p {
-        color: #717171;
-        font-size: 16px;
-        padding-top: 10px;
-        text-align: justify;
-    }
-    
-    .info > a {
-        background-color: #03a9f4;
-        border-radius: 2px;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-        color: #fff;
-        transition: all 0.5s ease 0s;
-    }
-    
-    .info > a:hover {
-        background-color: #0288d1;
-        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
-        color: #fff;
-        transition: all 0.5s ease 0s;
-    }
-    </style>
+    {%include 'top.html' %}
+    <title>Solar Rooftop</title>
 </head>
 
-<body style="background-color: : #66615b">
-    <section id="menu-9">
-        <nav class="navbar navbar-dropdown navbar-fixed-top">
-            <div class="container">
-                <div class="mbr-table">
-                    <div class="mbr-table-cell">
-                        <div class="navbar-brand">
-                            <a href="{{url_for('index')}}" class="navbar-logo"><img src="{{url_for('static',filename='assets/images/logo.png')}}" alt="Mobirise"></a>
-                            <a class="navbar-caption" href="{{url_for('index')}}">SolConPower</a>
-                        </div>
-                    </div>
-                    <div class="mbr-table-cell">
-                        <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-                            <div class="hamburger-icon"></div>
-                        </button>
-                        <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
-                            <li class="nav-item"><a class="nav-link link" href="{{url_for('index')}}">HOME</a></li>
-                            <li class="nav-item"><a class="nav-link link" href="{{url_for('products')}}" aria-expanded="false">PRODUCTS</a></li>
-                            <li class="nav-item"><a class="nav-link link" href="{{url_for('contact')}}" aria-expanded="false">CONTACT</a></li>
-                            <li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="{{url_for('solarMeter')}}">SOLAR-METER</a></li>
-                        </ul>
-                        <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-                            <div class="close-icon"></div>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </section>
-    <div class="container" style="padding-top: 10px; padding-bottom: 50px;">
+<body>
+    {%include 'header.html' %}
+    <div class="container" style="padding-top: 60px; padding-bottom: 50px;">
         <div class="row">
             <div class="col-xs-12">
                 <div class="box">
                     <div class="info">
                         <h5 class="product-title" style="color: ;text-align: right;">SOLAR ROOFTOP SYSTEM</h5></hr>
                         <div class="row">
-                            <div class="col-md-5"> <img src="{{url_for('static',filename='assets/images/SolarRoofTop.jpg')}}" class="img-box" alt="Responsive image" style="height: 300px;width: 400px;padding-top: 25px;"></div>
-                            <div class="col-md-7" style="padding-left: 20px;text-align: left;padding-top: 25px;">
+                            <div class="col-md-5" style="padding-left: 20px;text-align:left;padding-top: 25px;"> <img src="{{url_for( 'static',filename='assets/images/SolarRoofTop.jpg')}}" class="img-box " alt="Responsive image " style="height: 300px;width: 400px;padding-top: 25px; "></div>
+                            <div class="col-md-7 " style="padding-left: 20px;text-align: left;padding-top: 25px; ">
                                 <p>
                                     In grid connected <b>Rooftop Power System</b>, the DC power generated from PV panel is converted to AC power using power conditioning unit and is fed to the grid.
                                     <br> Generated power during the day time is utilized fully by powering captive loads and feed excess power to the grid as long as grid is available.
@@ -123,54 +25,54 @@
                                 </p>
                             </div>
                         </div>
-                        <a href="" class="btn">Link</a>
+                        <a href=" " class="btn ">Link</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <div class="box">
-                    <div class="info">
-                        <h4 class="text-center">Advantages</h4>
+        <!-- <div class="row ">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+                <div class="box ">
+                    <div class="info ">
+                        <h4 class="text-center ">Advantages</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor soluta!</p>
-                        <a href="" class="btn">Link</a>
+                        <a href=" " class="btn ">Link</a>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <div class="box">
-                    <div class="info">
-                        <h4 class="text-center">Title</h4>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+                <div class="box ">
+                    <div class="info ">
+                        <h4 class="text-center ">Title</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor soluta!</p>
-                        <a href="" class="btn">Link</a>
+                        <a href=" " class="btn ">Link</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="box">
-                    <div class="info">
-                        <h5 class="product-title" style="color: ;text-align: left;">Vision ...</h5></hr>
-                        <div class="row">
-                            <div class="col-md-5" style="padding-left: 20px;text-align:left;padding-top: 25px;">
+        </div> -->
+        <div class="row ">
+            <div class="col-xs-12 ">
+                <div class="box ">
+                    <div class="info ">
+                        <h5 class="product-title " style="color: ;text-align: left; ">Vision ...</h5></hr>
+                        <div class="row ">
+                            <div class="col-md-5 " style="padding-left: 20px;text-align:left;">
                                 <p>Electricity generated through coal plants is becoming expensive by every passing day. Power cuts and increasing dependence on DG sets is causing a lot of damage to the environment. The demand supply gap for electricity is increasing in the country which makes it very important for people to start thinking of other ways of realizing their energy needs. </p>
                                 <p>Many people in the country have started feeling the need of installing solar PV system for their home, apartment complex or small office use, and with this article we would try to provide some information which can be a good starting point for a <b>RoofTop Solar PV system project.</b></p>
                             </div>
-                            <div class="col-md-7"> <img src="{{url_for('static',filename='assets/images/srooftop1.jpg')}}" class="img-box" alt="Responsive image" style="height: 400px;width: 600px;padding-top: 25px;padding-top: 25px;padding-bottom: 25px;"></div>
+                            <div class="col-md-7 "> <img src="{{url_for( 'static',filename='assets/images/srooftop1.jpg' )}} " class="img-box " alt="Responsive image " style="height: 400px;width: 600px;padding-top: 25px;padding-top: 25px;padding-bottom: 25px; "></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="box">
-                    <div class="info">
-                        <h5 class="product-title" style="color: ;text-align: left;">Working ...</h5></hr>
-                        <div class="row">
-                            <div class="col-md-12" style="padding-left: 20px;text-align:left;padding-top: 25px;">
+        <div class="row ">
+            <div class="col-xs-12 ">
+                <div class="box ">
+                    <div class="info ">
+                        <h5 class="product-title " style="color: ;text-align: left; ">Working ...</h5></hr>
+                        <div class="row ">
+                            <div class="col-md-12 " style="padding-left: 20px;text-align:left;padding-top: 25px; ">
                                 <p><b>A Rooftop Solar PV System</b> could be with or, without having grid interaction. Solar PV cell is the basic building block of a PV system. It consists of semiconductor material that absorbs sunlight to generate electricity through a phenomenon called photoelectric effect. </p>
                                 <p>Only sunlight of a certain wavelength can effectively generate electricity. Although a solar PV can generate electricity on a cloudy day, but it is not as effective as it is on a sunny day. In grid-interactive system (includes on-grid and grid interactive system), the DC power generated from solar PV panels is converted to AC power using power conditioning unit and is fed to the grid depending on the system installed at institution, commercial establishment or, residential complex. It used to generate power during the daytime which is utilized fully by powering the captive loads and feeding excess power to the grid as long as grid is available. In cases, where solar power is not sufficient due to cloud cover etc. the captive loads are served by drawing power from the grid.</p>
                                 <p> The grid-interactive rooftop solar PV systems thus work on net-metering basis wherein the beneficiary pays to the utility on net meter reading basis only. Ideally, grid interactive systems do not require battery backup as the grid acts as the back-up for feeding excess solar power and vice-versa. However, to enhance the performance reliability of the overall systems, a minimum battery-back of one hour of load capacity is strongly recommended. In grid-interactive systems, it has, however to be ensured that in case the grid fails, the solar power has to be fully utilized or, islanded immediately feeding to the grid (if any in excess) so as to safe-guard any grid person/technician from getting shock (electrocuted) while working on the grid for maintenance etc. This feature is termed as <b>Anti-Islanding Protection.</b></p>
@@ -181,17 +83,8 @@
             </div>
         </div>
     </div>
+    {%include 'footer.html'%}
 </body>
-<script src="{{url_for('static',filename='assets/web/assets/jquery/jquery.min.js')}}"></script>
-<script src="{{url_for('static',filename='assets/tether/tether.min.js')}}"></script>
-<script src="{{url_for('static',filename='assets/bootstrap/js/bootstrap.min.js')}}"></script>
-<script src="{{url_for('static',filename='assets/smooth-scroll/smooth-scroll.js')}}"></script>
-<script src="{{url_for('static',filename='assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js')}}"></script>
-<script src="{{url_for('static',filename='assets/jquery-mb-ytplayer/jquery.mb.ytplayer.min.js')}}"></script>
-<script src="{{url_for('static',filename='assets/viewport-checker/jquery.viewportchecker.js')}}"></script>
-<script src="{{url_for('static',filename='assets/dropdown/js/script.min.js')}}"></script>
-<script src="{{url_for('static',filename='assets/touch-swipe/jquery.touch-swipe.min.js')}}"></script>
-<script src="{{url_for('static',filename='assets/theme/js/script.js')}}"></script>
-<script src="{{url_for('static',filename='assets/mobirise-slider-video/script.js')}}"></script>
+{% include 'bottom.html'%}
 
 </html>
