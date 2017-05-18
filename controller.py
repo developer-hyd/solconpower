@@ -1,9 +1,10 @@
-import os
+import os,sqlite3
 from flask import Flask, request, render_template, url_for, flash,redirect,session
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 app.secret_key = "solcon@123"
+db = 'solcon.db'
 
 
 @app.route('/')
@@ -24,7 +25,12 @@ def contact():
 		name = request.form['name']
 		email = request.form['email']
 		message = request.form['message']
-		print (name+message+email)
+		con = sqlite3.connect(db)
+		sql = "insert into users values (NULL,'%s','%s','%s',DATE('now'),124578)" %(name,email,message)
+		cursor = con.cursor()
+		res = cursor.execute(sql)
+		con.commit()
+		con.close()
 		flash('Our Expert Will Get Back To You Soon........!')
 		return redirect(request.url)
 	return render_template('contact.html')
