@@ -1118,6 +1118,7 @@ footer
 
 .btn {
     margin-bottom: 0.5rem;
+    border-radius: 0em;
 }
 
 .btn + .btn {
@@ -1173,8 +1174,8 @@ footer
 .btn-sm {
     padding: 0.625rem 2.1874rem;
     font-size: 0.9687rem;
-    line-height: 1.5;
-    border-radius: 3px;
+    line-height: 1;
+    border-radius: 0px;
     font-family: "Lora";
     font-style: italic;
     font-weight: 400;
