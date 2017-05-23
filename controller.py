@@ -26,10 +26,14 @@ def contact():
 		email = request.form['email']
 		message = request.form['message']
 		con = sqlite3.connect(db)
-		sql = "insert into users values (NULL,'%s','%s','%s',DATE('now'),124578)" %(name,email,message)
+		sql = "insert into users values (NULL,'%s','%s','%s')" %(name,email,message)
+		print sql
 		cursor = con.cursor()
 		res = cursor.execute(sql)
+		print res.fetchall()
 		con.commit()
+		data = cursor.execute('select * from users')
+		print data.fetchall()
 		con.close()
 		flash('Our Expert Will Get Back To You Soon........!')
 		return redirect(request.url)
