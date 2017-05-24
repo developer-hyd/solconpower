@@ -4,7 +4,7 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 app.secret_key = "solcon@123"
-db = 'solcon.db'
+db = '/home/vivek/Desktop/ThinkOfIt/solconpower/solcon.db'
 
 
 @app.route('/')
